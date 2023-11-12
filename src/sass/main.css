@@ -1,0 +1,336 @@
+.column-sm-50 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .column-sm-50 {
+    width: 49%;
+  }
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.wi-100 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+nav .nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: #8a6829;
+  font-weight: 700;
+}
+nav ul a:hover {
+  color: #c78408;
+}
+
+.cv-container {
+  background: rgb(244, 110, 77);
+  background: linear-gradient(45deg, rgb(244, 110, 77) 0%, rgb(255, 207, 133) 100%);
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+@media (min-width: 768px) {
+  .cv-container {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .cv-container {
+    padding: 40px;
+  }
+}
+
+aside {
+  order: 1;
+  text-align: right;
+  max-width: 25%;
+  border-right: 2px solid #F8C5BA;
+  padding: 20px 40px 20px 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 271px;
+  overflow: scroll;
+  max-height: calc(100vh - 70px);
+  padding-top: 300px;
+  background: rgb(244, 110, 77);
+  background: linear-gradient(45deg, rgb(244, 110, 77) 0%, rgb(255, 207, 133) 100%);
+  overflow-x: hidden;
+}
+aside ul {
+  padding: 0;
+  list-style-type: none;
+}
+aside ul li {
+  font-size: 14px;
+}
+aside h4 {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+}
+main {
+  order: 2;
+  padding: 20px 40px;
+  padding-left: 271px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+header h2 {
+  font-size: 42px;
+  font-weight: 900;
+  border-right: 2px solid black;
+  padding-right: 20px;
+  margin-top: 0;
+}
+header h2.name {
+  padding: 8px 12px 8px 0;
+  margin-bottom: 0px;
+}
+header .resume {
+  width: 70%;
+  padding-left: 20px;
+}
+header .resume h5 {
+  font-size: 24px;
+  margin: 0;
+}
+header .resume p {
+  font-size: 12px;
+  max-width: 70%;
+  margin-bottom: 0;
+}
+header .portfolio-container {
+  width: 100%;
+  margin-top: 20px;
+}
+header .portfolio-container a {
+  text-decoration: none;
+}
+header .portfolio-container a button {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px black;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.laboral-exp-container, .exp-extra-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.laboral-exp-container h4.title, .exp-extra-container h4.title {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.laboral-exp-container .exp-item, .exp-extra-container .exp-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.laboral-exp-container .exp-item .line, .exp-extra-container .exp-item .line {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  max-width: 20px;
+  align-self: stretch;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.laboral-exp-container .exp-item .exp, .exp-extra-container .exp-item .exp {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+.laboral-exp-container .exp-item .exp h4.empresa, .exp-extra-container .exp-item .exp h4.empresa {
+  width: 100%;
+  font-size: 32px;
+  margin: 0;
+  padding-left: 12px;
+  font-weight: 900;
+}
+.laboral-exp-container .exp-item .exp h5.cargo, .exp-extra-container .exp-item .exp h5.cargo {
+  margin: 0;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.laboral-exp-container .exp-item .exp h5.cargo span, .exp-extra-container .exp-item .exp h5.cargo span {
+  font-size: 12px;
+  padding-left: 12px;
+  font-weight: 500;
+}
+.laboral-exp-container .exp-item .exp h5.cargo br + span, .exp-extra-container .exp-item .exp h5.cargo br + span {
+  padding-left: 0;
+}
+.laboral-exp-container .exp-item .exp p, .exp-extra-container .exp-item .exp p {
+  padding-left: 12px;
+  font-size: 12px;
+  margin: 8px;
+  margin-left: 0;
+}
+.laboral-exp-container .exp-item .exp p:last-child, .exp-extra-container .exp-item .exp p:last-child {
+  margin-bottom: 0;
+}
+
+.exp-extra-container {
+  align-self: center;
+  margin-top: 60px;
+}
+@media (min-width: 1200px) {
+  .exp-extra-container {
+    padding-left: 40px;
+    width: 45%;
+    border-left: 2px solid #F8C5BA;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .laboral-exp-container {
+    width: 55%;
+  }
+}
+
+.portfolio-table {
+  border-spacing: 0;
+}
+.portfolio-table .td-img img {
+  max-width: 350px;
+}
+
+.portfolio-table td, .portfolio-table th {
+  border: 1px solid white;
+  padding: 12px 24px;
+}
+
+.portfolio-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.portfolio-page .button-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio-page .button-container a {
+  text-decoration: none;
+}
+.portfolio-page .button-container a button {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 2px black;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+footer {
+  width: calc(100% - 271px);
+  background-color: white;
+  height: 100px;
+  margin-left: 271px;
+}/*# sourceMappingURL=main.css.map */
