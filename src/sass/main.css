@@ -332,9 +332,25 @@ header .portfolio-container a button {
 
 footer {
   width: calc(100% - 271px);
-  background-color: white;
-  height: 100px;
   margin-left: 271px;
+  background: rgb(244, 110, 77);
+  background: linear-gradient(45deg, rgb(244, 110, 77) 0%, rgb(255, 207, 133) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+footer .logo {
+  font-size: 48px;
+  font-weight: 900;
+}
+footer .redes {
+  font-size: 24px;
+}
+footer .redes h5 {
+  margin: 0;
+  width: 100%;
 }
 
 .portafolio-section {
@@ -368,4 +384,69 @@ footer {
 }
 .portafolio-section .trabajos-container .trabajo img {
   width: 100%;
+}
+
+.contacto-section {
+  width: 100%;
+  padding: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+}
+.contacto-section .form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contacto-section .form-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.contacto-section .form-section input {
+  width: 100%;
+  padding: 12px 24px;
+  padding-top: 16px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+}
+.contacto-section .form-section input::-moz-placeholder {
+  color: #707070;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+.contacto-section .form-section input::placeholder {
+  color: #707070;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+}
+.contacto-section .form-section input:not(:first-child) {
+  margin-top: 12px;
+}
+.contacto-section .form-section textarea {
+  resize: none;
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 12px;
+}
+.contacto-section .form-section .form-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.contacto-section .form-section .form-button-container button {
+  font-size: 16px;
+  padding: 12px 40px;
+  border-radius: 4px;
+  background-color: #F8F9FA;
+  border: 1px solid #DDDDDD;
 }/*# sourceMappingURL=main.css.map */
