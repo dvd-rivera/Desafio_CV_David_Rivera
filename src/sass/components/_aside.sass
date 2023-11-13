@@ -4,33 +4,34 @@ aside
     max-width: 25%
     border-right: 2px solid #F8C5BA
     padding: 20px 40px 20px 0
-    align-self: stretch
     display: flex
-    flex-direction: column
     justify-content: center
-    align-items: flex-end
+    align-items: flex-start
     position: fixed
     top: 70px
     left: 0
     width: 271px
     overflow: scroll
+    overflow-x: hidden
+    min-height: calc( 100vh - 70px )
     max-height: calc( 100vh - 70px )
-    padding-top: 300px
     background: rgb(244,110,77)
     background: linear-gradient(45deg, rgba(244,110,77,1) 0%, rgba(255,207,133,1) 100%)
-    overflow-x: hidden
 
-    ul
-        padding: 0
-        list-style-type: none
+    .aside-container
+        align-self: flex-start
 
-        li
-            font-size: 14px
+        ul
+            padding: 0
+            list-style-type: none
 
-    h4
-        font-weight: 900
-        font-size: 20px
-        margin: 0
+            li
+                font-size: 14px
 
-    &::-webkit-scrollbar
+        h4
+            font-weight: 900
+            font-size: 20px
+            margin: 0
+
+        &::-webkit-scrollbar
 
